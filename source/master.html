@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex">
+<!-- dataLayer (page vars) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({ lp_grade:'index', lp_channel:'__LP_CHANNEL__' });
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NGGHLZ38');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AOHARUインターン｜キャリアは、体験で磨かれる。</title>
+<meta name="description" content="「AOHARUインターン」は、大学1・2年生向けの成長支援型長期インターン紹介サービスです。就職も大手も中小も、営業も企画もエンジニアも。いろんな選択肢を、あなたに。無料で登録・相談可能です！">
+<meta property="og:title" content="AOHARUインターン｜キャリアは、体験で磨かれる。">
+<meta property="og:description" content="大学1・2年生向けの成長支援型長期インターン紹介サービス。選べるって、たのしい。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   AOHARUインターン LP  — 白基調リニューアル版
+   ベース: 白/クリーム  ／ アクセント: デニムブルー + イエロー
+   フォント: ヒラギノ角ゴ → Noto Sans JP
+   ※ 紺(ネイビー)のベタ面は不使用
+   ========================================================= */
+:root{
+  --cream:#F7F6F1;
+  --cream-2:#FCFBF7;
+  --paper:#FFFFFF;
+  --blue:#3DA0E3;
+  --blue-d:#2E86C8;
+  --blue-soft:#AFC6E8;
+  --blue-tint:#EEF5FC;--orange-tint:#FDF3E3;
+  --orange:#F18F00;
+  --orange-d:#DA8000;
+  --yellow:#F4D34E;
+  --yellow-soft:#FBEEAE;
+  --ink:#3E4B66;
+  --ink-h:#34415E;
+  --muted:#8A92A6;
+  --line:#EAE7DE;
+  --shadow:0 16px 40px rgba(94,124,181,.14);
+  --shadow-sm:0 8px 22px rgba(94,124,181,.10);
+  --radius:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;
+  color:var(--ink);
+  background:var(--cream-2);
+  line-height:1.9;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;height:auto}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+.accent-bl{color:var(--blue)}
+.mark{
+  background:linear-gradient(transparent 60%, var(--yellow) 60%, var(--yellow) 92%, transparent 92%);
+}
+
+/* ---------- Header ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(252,251,247,.86);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-in{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1060px;margin:0 auto;padding:0 22px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:900;font-size:21px;color:var(--ink-h);letter-spacing:.01em}
+.logo .dot{width:22px;height:22px;border-radius:50%;background:var(--blue);position:relative;flex:none}
+.logo .dot::before,.logo .dot::after{content:"";position:absolute;width:13px;height:13px;border-radius:50%;}
+.logo .dot::before{background:var(--blue-soft);left:-6px;top:7px}
+.logo .dot::after{background:var(--orange);left:9px;top:9px}
+.logo span{color:var(--blue)}
+.lg-mark{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;font-weight:800;font-size:23px;letter-spacing:.01em;gap:0;align-items:baseline}
+.lg-mark .g{color:#5b6470}
+.lg-mark .bl{color:#29ABE2}
+.lg-mark .or{color:#F7941D}
+.lg-mark .in{color:#5b6470;margin-left:7px;font-size:19px;font-weight:700}
+.btn-line{
+  display:inline-flex;align-items:center;gap:7px;
+  background:#06C755;color:#fff;font-weight:700;font-size:14px;
+  padding:10px 18px;border-radius:999px;text-decoration:none;
+  box-shadow:0 6px 14px rgba(6,199,85,.30);transition:transform .15s;
+}
+.btn-line:hover{transform:translateY(-2px)}
+.btn-line::before{content:"LINE";font-weight:800;font-size:11px;background:#fff;color:#06C755;border-radius:4px;padding:1px 5px}
+.hnav{display:flex;align-items:center;gap:20px}
+.hnav .hlink{color:var(--ink-h);font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}
+.hnav .hlink:hover{color:var(--blue)}
+
+/* ---------- Buttons ---------- */
+.cta{
+  display:inline-flex;flex-direction:column;align-items:center;gap:2px;
+  background:linear-gradient(180deg,#06C755,#05A648);
+  color:#fff;font-weight:900;font-size:20px;text-decoration:none;
+  padding:19px 52px;border-radius:999px;
+  box-shadow:0 14px 28px rgba(6,199,85,.38);
+  transition:transform .15s, box-shadow .15s;
+}
+.cta:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(6,199,85,.5)}
+.cta small{font-weight:600;font-size:12px;opacity:.9}
+.lbadge{display:inline-block;background:#fff;color:#06C755;font-weight:800;font-size:.72em;border-radius:5px;padding:1px 6px;margin-right:7px;vertical-align:2px;letter-spacing:.02em}
+.cta-note{font-size:12px;color:var(--muted);margin-top:14px;text-align:center;line-height:1.7}
+.ribbon{
+  display:inline-block;color:var(--ink-h);font-weight:700;font-size:16px;
+  position:relative;padding:0 32px;margin-bottom:14px;
+}
+.ribbon::before,.ribbon::after{content:"";position:absolute;top:50%;width:2px;height:26px;background:var(--yellow);border-radius:2px}
+.ribbon::before{left:8px;transform:rotate(-22deg)}
+.ribbon::after{right:8px;transform:rotate(22deg)}
+
+/* ---------- HERO (First View) ---------- */
+.hero{
+  background:var(--cream);
+  padding:120px 0 170px;
+  min-height:90vh;display:flex;align-items:center;position:relative;overflow:hidden;
+}
+.hero::after{content:"";position:absolute;left:-80px;top:60px;width:230px;height:230px;border-radius:50%;background:radial-gradient(circle,rgba(175,198,232,.30),transparent 70%)}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:40px;align-items:center;position:relative;z-index:1;width:100%}
+.spark{display:inline-block;color:var(--yellow);font-weight:900;font-size:22px;transform:translateY(-6px)}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--blue),var(--blue-d));color:#fff;font-weight:800;font-size:16.5px;padding:10px 22px;border-radius:999px;box-shadow:0 8px 18px rgba(61,160,227,.32);margin-bottom:20px;letter-spacing:.02em}
+.hero-eyebrow::before{content:none}
+.hero-eyebrow b{color:var(--yellow);font-weight:900;padding:0 1px}
+.hero h1{
+  font-size:56px;font-weight:900;line-height:1.3;color:var(--ink-h);
+  letter-spacing:.01em;margin-bottom:14px;
+}
+.hero .dotline{height:0;border-top:3px dotted var(--blue-soft);width:230px;margin:6px 0 22px}
+.hero .sub{font-size:18px;color:var(--ink);margin-bottom:24px;line-height:2.05}
+.hero .tagline{font-size:28px;font-weight:900;color:var(--ink-h);display:inline-block;margin-bottom:30px}
+.hero .tagline u{text-decoration:none;background:linear-gradient(transparent 62%, var(--yellow) 62%)}
+.hero .brand{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin-top:30px}
+.wc-logo{height:30px;width:auto;display:block}
+.hero .brand .blogo{font-weight:900;font-size:18px;color:var(--ink-h)}
+.hero .brand .btag{font-size:12px;color:var(--muted)}
+
+/* hero art: character + option constellation */
+.hero-art{position:relative;min-height:520px}
+.hero-art .flag{position:absolute;top:34%;left:50%;transform:translate(-50%,-50%);z-index:3;background:var(--yellow);color:var(--ink-h);font-weight:800;font-size:14px;padding:8px 18px;border-radius:8px 8px 8px 0;box-shadow:0 6px 14px rgba(244,211,78,.45);white-space:nowrap}
+.char-svg{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:260px;height:auto;z-index:3;filter:drop-shadow(0 12px 18px rgba(94,124,181,.18))}
+.pcloud{position:relative;height:520px}
+.pcloud .lines{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.pcloud .lines circle{fill:#bcd2ee}
+.pchip{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;background:#fff;color:var(--ink-h);font-weight:800;font-size:16.5px;padding:16px 24px;border:2px solid rgba(86,112,165,.5);border-radius:48% 52% 47% 53%/53% 47% 52% 48%;box-shadow:0 8px 18px rgba(94,124,181,.14);z-index:4;text-align:center;transition:box-shadow .18s;animation:pfloat 4.4s ease-in-out infinite}
+.pchip:nth-of-type(2n){border-radius:54% 46% 52% 48%/46% 54% 48% 52%}
+.pchip:nth-of-type(3n){border-radius:50% 50% 45% 55%/55% 45% 50% 50%}
+@keyframes pfloat{0%,100%{transform:translate(-50%,-50%) translateY(0)}50%{transform:translate(-50%,-50%) translateY(-7px)}}
+.pchip:nth-of-type(2n){animation-duration:5.2s;animation-delay:-1.3s}
+.pchip:nth-of-type(3n){animation-duration:4.8s;animation-delay:-2.1s}
+.pchip:nth-of-type(4n){animation-delay:-0.7s}
+.pchip:nth-of-type(5n){animation-duration:5.7s;animation-delay:-1.7s}
+.pchip:hover{box-shadow:0 16px 32px rgba(94,124,181,.28)}
+.pchip .ic{width:7px;height:7px;border-radius:50%;background:var(--blue);flex:none}
+.pchip.alt .ic{background:var(--orange)}
+.pchip:nth-of-type(1){top:18%;left:28%}
+.pchip:nth-of-type(2){top:9%;left:50%}
+.pchip:nth-of-type(3){top:16%;left:72%}
+.pchip:nth-of-type(4){top:34%;left:12%}
+.pchip:nth-of-type(5){top:30%;left:88%}
+.pchip:nth-of-type(6){top:50%;left:90%}
+.pchip:nth-of-type(7){top:55%;left:16%}
+.pchip:nth-of-type(8){top:66%;left:86%}
+
+/* ---------- FV Carousel (peeks from FV) ---------- */
+.fv-carousel{position:relative;z-index:6;margin-top:-150px}
+.fv-carousel .cap{max-width:1060px;margin:0 auto 18px;padding:0 22px;display:block;text-align:center}
+.fv-carousel .cap b{font-weight:900;color:var(--ink-h);font-size:24px;display:inline-block;line-height:1.3}
+.cap .cap-k{display:block;font-weight:800;font-size:12px;letter-spacing:.18em;color:var(--blue);text-transform:uppercase;margin-bottom:5px}
+.cap .cap-sub{display:block;font-size:13px;color:var(--muted);margin-top:7px}
+.fv-carousel .cap .smp{font-size:11px;font-weight:700;color:#fff;background:var(--blue-soft);padding:2px 8px;border-radius:6px}
+.carousel{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 22px 26px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.carousel::-webkit-scrollbar{display:none}
+.slide{
+  flex:0 0 300px;scroll-snap-align:start;background:var(--paper);border:1px solid var(--line);
+  border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm);
+}
+.slide img{width:100%;height:170px;object-fit:cover}
+.slide .body{padding:16px 18px}
+.slide .tag{display:inline-block;font-size:12px;font-weight:700;color:var(--blue-d);background:var(--blue-tint);padding:3px 11px;border-radius:7px;margin-bottom:9px}
+.slide h4{font-size:16px;font-weight:900;color:var(--ink-h);margin-bottom:5px;line-height:1.5}
+.slide p{font-size:13px;color:var(--muted)}
+.gradesel{background:var(--cream-2);padding:58px 0}
+.gs-lead{text-align:center;font-weight:800;color:var(--ink-h);font-size:18px;margin-bottom:22px}
+.gs-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:820px;margin:0 auto}
+.gs-card{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid var(--line);border-top:5px solid var(--blue);border-radius:20px;padding:30px 32px 34px;min-height:300px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,box-shadow .15s}
+.gs-card.y2{border-top-color:var(--orange)}
+.gs-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.gs-y{font-size:20px;font-weight:900;color:var(--blue-d)}
+.gs-card.y2 .gs-y{color:var(--orange-d)}
+.gs-t{font-size:14px;color:var(--ink)}
+.gs-go{margin-top:8px;font-weight:800;color:var(--blue)}
+.gs-card.y2 .gs-go{color:var(--orange-d)}
+
+/* ---------- Section base ---------- */
+section{padding:74px 0}
+.sec-head{text-align:center;margin-bottom:46px}
+.mascot{width:100px;height:auto;display:block;margin:0 auto 12px}
+.regret .mascot,.closing .mascot{margin-bottom:18px}
+.sec-kicker{font-weight:800;font-size:12px;letter-spacing:.22em;color:var(--blue-d);text-transform:uppercase;display:block;margin-bottom:10px}
+.sec-title{font-size:30px;font-weight:900;color:var(--ink-h);line-height:1.45}
+.sec-title .lg{color:var(--blue)}
+.lead-center{text-align:center;font-size:16px;max-width:760px;margin:0 auto}
+
+/* ---------- Regret ---------- */
+.regret{background:var(--blue-tint);text-align:center;position:relative;overflow:hidden}
+.regret .big{font-size:25px;font-weight:900;line-height:1.65;margin-bottom:20px;color:var(--ink-h)}
+.worry{max-width:580px;margin:20px auto;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-sm);padding:14px 24px;text-align:left;list-style:none}
+.worry li{position:relative;padding:11px 0 11px 30px;font-size:15px;color:var(--ink);border-bottom:1px dashed var(--line)}
+.worry li:last-child{border-bottom:none}
+.worry li::before{content:"？";position:absolute;left:2px;top:11px;color:var(--blue);font-weight:900}
+.canlist{max-width:560px;margin:18px auto 0;text-align:left}
+.canlist .canlead{font-weight:800;color:var(--ink-h);margin-bottom:6px}
+.canlist ul{list-style:none}
+.canlist li{position:relative;padding:7px 0 7px 28px;font-size:15px;color:var(--ink-h);font-weight:600}
+.canlist li::before{content:"✓";position:absolute;left:3px;color:var(--orange);font-weight:900}
+.regret .punchline{font-size:18px;font-weight:800;color:var(--ink-h);margin-top:22px;line-height:1.75}
+.regret .punchline b{color:var(--blue)}
+.regret .quote{color:var(--blue);position:relative;display:inline-block}
+.regret .quote::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:9px;background:var(--yellow-soft);z-index:-1}
+.regret img{border-radius:20px;margin:30px auto 0;max-width:560px;box-shadow:var(--shadow)}
+
+/* ---------- What is ---------- */
+.whatis{background:var(--cream)}
+.whatis-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.whatis-grid img{border-radius:20px;box-shadow:var(--shadow)}
+.tag-service{display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:13px;padding:5px 14px;border-radius:8px;margin-bottom:16px}
+.whatis h3{font-size:24px;font-weight:900;color:var(--ink-h);line-height:1.55;margin-bottom:16px}
+.whatis h3 b{color:var(--blue)}
+.def-note{background:var(--blue-tint);border-left:4px solid var(--blue);border-radius:10px;padding:14px 16px;font-size:14px;color:var(--ink);margin-top:16px;line-height:1.85}
+.def-note b{display:block;color:var(--blue-d);margin-bottom:4px}
+
+/* ---------- Comparison ---------- */
+.cmp-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:920px;margin:0 auto}
+.cmp-card{border-radius:20px;box-shadow:var(--shadow);background:var(--paper);overflow:hidden}
+.cmp-card .cap{padding:17px;text-align:center;font-size:18px;font-weight:900;color:#fff}
+.cmp-other .cap{background:var(--ink-h)}
+.cmp-ours .cap{background:linear-gradient(135deg,var(--orange),var(--orange-d))}
+.cmp-card ul{list-style:none;padding:22px 24px 4px}
+.cmp-card li{position:relative;padding:9px 0 9px 32px;font-size:15px;color:var(--ink)}
+.cmp-card li::before{content:"✓";position:absolute;left:0;top:10px;width:19px;height:19px;border-radius:50%;border:1.6px solid var(--blue);color:var(--blue);font-size:10px;font-weight:900;display:grid;place-items:center;line-height:1}
+.cmp-other li::before{border-color:#aeb6c2;color:#aeb6c2}
+.cmp-res{margin:4px 24px 24px;padding-top:16px;border-top:1px dashed var(--line)}
+.cmp-res .lb{display:block;text-align:center;font-weight:800;color:var(--ink-h);margin-bottom:6px;font-size:14px;text-decoration:underline;text-underline-offset:4px}
+.cmp-res .it{font-size:15px;padding:5px 0 5px 24px;position:relative;color:var(--ink)}
+.cmp-ours .cmp-res .it{color:var(--ink-h);font-weight:700}
+.cmp-res .it::before{content:"›";position:absolute;left:9px;color:var(--muted);font-weight:900}
+.cmp-ours .cmp-res .it::before{content:"✦";color:var(--orange);left:5px;font-size:12px}
+.cmp-bubble{max-width:560px;margin:22px auto 0;background:var(--blue);color:#fff;font-weight:800;text-align:center;padding:14px 22px;border-radius:14px;position:relative;font-size:15px;box-shadow:var(--shadow-sm)}
+.cmp-bubble::before{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%);border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:10px solid var(--blue)}
+
+/* ---------- Reasons ---------- */
+.reasons{background:var(--cream-2)}
+.reason{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center;margin-bottom:54px}
+.reason:nth-child(even) .reason-img{order:2}
+.reason-img img{border-radius:20px;box-shadow:var(--shadow)}
+.reason h4{font-size:21px;font-weight:900;color:var(--ink-h);margin-bottom:14px;padding-left:16px;border-left:6px solid var(--yellow);line-height:1.55}
+.reason p{font-size:15px;color:var(--ink);margin-bottom:10px}
+
+/* ---------- CTA band ---------- */
+.cta-band{
+  background:linear-gradient(135deg,var(--blue-tint),#E4EDFA);
+  text-align:center;
+}
+
+/* ---------- FAQ ---------- */
+.faq-list{max-width:820px;margin:0 auto;display:grid;gap:16px}
+.faq-item{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
+.faq-q{display:flex;gap:14px;align-items:flex-start;padding:20px 22px;font-weight:700;color:var(--ink-h);font-size:16px}
+.faq-q .qmark{flex:none;width:30px;height:30px;border-radius:8px;background:var(--blue);color:#fff;font-weight:800;display:grid;place-items:center}
+.faq-a{display:flex;gap:14px;align-items:flex-start;padding:0 22px 22px;font-size:15px;color:var(--ink)}
+.faq-a .amark{flex:none;width:30px;height:30px;border-radius:8px;background:var(--yellow);color:var(--ink-h);font-weight:800;display:grid;place-items:center}
+
+/* ---------- Voices ---------- */
+.voices{background:var(--cream)}
+.voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.voice-card{background:var(--paper);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden;display:flex;flex-direction:column}
+.voice-card img{aspect-ratio:4/3;object-fit:cover}
+.voice-body{padding:20px}
+.voice-tag{font-size:13px;font-weight:700;color:var(--blue-d);background:var(--blue-tint);display:inline-block;padding:4px 12px;border-radius:7px;margin-bottom:12px}
+.voice-body p{font-size:14px;color:var(--ink)}
+
+/* ---------- Flow ---------- */
+.flow{max-width:760px;margin:0 auto;position:relative}
+.flow::before{content:"";position:absolute;left:27px;top:18px;bottom:18px;width:3px;background:linear-gradient(var(--blue-soft),var(--yellow))}
+.flow-step{display:flex;gap:22px;margin-bottom:26px;position:relative}
+.flow-num{flex:none;width:56px;height:56px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:800;font-size:20px;box-shadow:var(--shadow-sm);z-index:1}
+.flow-step:last-child .flow-num{background:var(--yellow);color:var(--ink-h)}
+.flow-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 22px;box-shadow:var(--shadow-sm);flex:1}
+.flow-card h5{font-size:17px;font-weight:900;color:var(--ink-h);margin-bottom:6px}
+.flow-card p{font-size:14px;color:var(--ink)}
+.flow-card .note{font-size:12px;color:var(--muted)}
+
+/* ---------- Points ---------- */
+.points{background:var(--cream-2)}
+.point{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:30px;margin-bottom:22px;box-shadow:var(--shadow-sm)}
+.point-no{font-weight:900;font-size:44px;color:var(--blue-soft);line-height:1}
+.point h4{font-size:20px;font-weight:900;margin-bottom:12px;color:var(--ink-h)}
+.point p{font-size:15px;color:var(--ink);margin-bottom:10px}
+.point ul{list-style:none;margin-top:10px}
+.point li{padding:7px 0 7px 26px;position:relative;font-size:15px;color:var(--ink);border-bottom:1px solid var(--line)}
+.point li:last-child{border-bottom:none}
+.point li::before{content:"";position:absolute;left:2px;top:14px;width:9px;height:9px;border-radius:50%;background:var(--yellow)}
+.point .link{display:inline-block;margin-top:14px;color:var(--blue);font-weight:700;text-decoration:none;border-bottom:2px solid var(--blue-soft);padding-bottom:2px}
+
+/* ---------- Closing ---------- */
+.closing{text-align:center;background:linear-gradient(180deg,var(--cream),var(--cream-2))}
+.benefit-list{max-width:680px;margin:0 auto 30px;display:grid;gap:14px}
+.benefit{background:var(--paper);border-radius:14px;box-shadow:var(--shadow-sm);padding:18px 22px;font-weight:700;color:var(--ink-h);font-size:17px;border-left:6px solid var(--yellow)}
+.closing .punch{font-size:23px;font-weight:900;color:var(--ink-h);line-height:1.65;margin:26px 0}
+.closing .punch b{color:var(--blue)}
+
+/* ---------- Footer ---------- */
+footer{background:var(--cream);color:var(--muted);text-align:center;padding:42px 0;font-size:13px;border-top:1px solid var(--line)}
+footer .logo{justify-content:center;margin-bottom:12px}
+
+/* sticky bottom CTA (mobile) */
+.sticky-cta{display:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:860px){
+  .gs-grid{grid-template-columns:1fr}
+  .hero-grid,.whatis-grid,.cmp-grid,.reason,.voice-grid{grid-template-columns:1fr}
+  .reason:nth-child(even) .reason-img{order:0}
+  .hero{min-height:auto;padding:104px 0 150px}
+  .hero-art{min-height:auto}
+  .pcloud{height:auto;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding-top:6px}
+  .pchip{position:static;transform:none;animation:none}
+  .pcloud .lines{display:none}
+  .char-svg{position:static;transform:none;display:block;margin:4px auto 16px;width:220px}
+  .hero-art .flag{position:static;transform:none;display:block;width:max-content;margin:0 auto 12px}
+  .hero h1{font-size:33px}
+  .hero .tagline{font-size:20px}
+  .sec-title{font-size:24px}
+  .regret .big{font-size:20px}
+  .voice-grid{gap:16px}
+  .point{grid-template-columns:1fr;gap:10px}
+  .fv-carousel{margin-top:-120px}
+  .slide{flex-basis:74vw}
+  .cta{font-size:18px;padding:18px 34px;width:100%}
+  section{padding:56px 0}
+  .header-in .btn-line{display:none}
+  .hnav .hlink{display:none}
+  .sticky-cta{
+    display:block;position:fixed;left:0;right:0;bottom:0;z-index:90;
+    background:rgba(252,251,247,.96);box-shadow:0 -4px 16px rgba(0,0,0,.10);
+    padding:10px 14px;backdrop-filter:blur(6px);border-top:1px solid var(--line);
+  }
+  .sticky-cta a{display:block;text-align:center;background:linear-gradient(180deg,#06C755,#05A648);color:#fff;font-weight:900;border-radius:999px;padding:14px;text-decoration:none;box-shadow:0 6px 16px rgba(6,199,85,.4)}
+  body{padding-bottom:72px}
+}
+
+.regret .rt{max-width:680px;margin:18px auto 0;font-size:15.5px;color:var(--ink);line-height:1.95;text-align:left}
+.regret .rt p{margin:0 0 14px}
+.regret .rt b{color:var(--blue)}
+.ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1040px;margin:0 auto}
+.ba-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px rgba(40,60,100,.06);overflow:hidden;display:flex;flex-direction:column}
+.ba-name{background:var(--blue-tint);padding:13px 18px;font-weight:900;color:var(--ink-h);font-size:15px}
+.ba-body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:10px}
+.ba-b,.ba-a{font-size:13.5px;line-height:1.8;color:var(--ink)}
+.ba-b .lab,.ba-a .lab{display:inline-block;font-weight:800;font-size:11.5px;border-radius:6px;padding:2px 9px;margin-right:6px}
+.ba-b .lab{color:var(--muted);background:#eef0f3}
+.ba-a .lab{color:#fff;background:var(--orange)}
+.ba-a{color:var(--ink-h)}
+.ba-arrow{text-align:center;color:var(--blue-soft);font-weight:900;font-size:18px;line-height:1}
+.r2grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:900px;margin:26px auto 0}
+.r2card{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:16px;padding:24px;box-shadow:0 8px 24px rgba(40,60,100,.06)}
+.r2card h4{font-size:17px;font-weight:900;color:var(--ink-h);margin:0 0 10px}
+.r2card p{font-size:14px;color:var(--ink);line-height:1.85;margin:0}
+@media(max-width:860px){.ba-grid{grid-template-columns:1fr}.r2grid{grid-template-columns:1fr}}
+
+/* lightbox modal */
+.carousel .slide{cursor:pointer}
+.lb-backdrop{position:fixed;inset:0;background:rgba(30,40,60,.55);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);display:flex;align-items:center;justify-content:center;z-index:9999;opacity:0;pointer-events:none;transition:opacity .2s ease;padding:20px}
+.lb-backdrop.open{opacity:1;pointer-events:auto}
+.lb-card{position:relative;background:#fff;border-radius:22px;max-width:440px;width:100%;overflow:hidden;box-shadow:0 30px 80px rgba(20,30,60,.35);transform:scale(.86) translateY(12px);transition:transform .28s cubic-bezier(.2,.9,.3,1.25);max-height:90vh;overflow-y:auto}
+.lb-backdrop.open .lb-card{transform:scale(1) translateY(0)}
+.lb-card>img{width:100%;height:200px;object-fit:cover;display:block}
+.lb-body{padding:22px 24px 26px}
+.lb-tag{display:inline-block;background:var(--blue-tint);color:var(--blue-d);font-weight:800;font-size:12px;padding:4px 12px;border-radius:999px}
+.lb-smp{display:inline-block;margin-left:8px;font-size:11px;color:var(--orange-d);font-weight:800;border:1px solid var(--orange);border-radius:6px;padding:1px 6px;vertical-align:middle}
+.lb-body h3{font-size:20px;font-weight:900;color:var(--ink-h);margin:12px 0 4px}
+.lb-meta{font-size:13px;color:var(--muted);margin-bottom:14px}
+.lb-detail{font-size:14.5px;line-height:1.9;color:var(--ink);white-space:pre-wrap}
+.lb-close{position:absolute;top:14px;right:16px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.92);border:none;font-size:22px;color:var(--ink-h);cursor:pointer;line-height:1;box-shadow:0 4px 12px rgba(0,0,0,.18)}
+
+/* ===== gradesel + grade pages : mock v3 typeB ===== */
+.mark{background:linear-gradient(transparent 60%, var(--yellow) 60%, var(--yellow) 92%, transparent 92%)}
+.gradesel{background:var(--cream-2);padding:54px 0 58px}
+.gs-head{text-align:center;margin-bottom:24px}
+.gs-kicker{font-weight:800;font-size:12px;letter-spacing:.22em;color:var(--blue);text-transform:uppercase;display:block;margin-bottom:10px}
+.gs-title{font-size:26px;font-weight:900;color:var(--ink-h);line-height:1.5}
+.gs-sub{font-size:14.5px;color:var(--ink);margin-top:10px}
+.gs-card{position:relative;overflow:hidden;min-height:0;display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid var(--line);border-top:5px solid var(--blue);border-radius:18px;padding:26px 26px 24px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,box-shadow .15s;cursor:pointer}
+.gs-card.y2{border-top-color:var(--orange)}
+.gs-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.gs-y{font-size:13px;font-weight:800;color:#fff;background:var(--blue);border-radius:999px;padding:3px 14px;align-self:flex-start}
+.gs-card.y2 .gs-y{background:var(--orange);color:#fff}
+.gs-h{font-size:20px;font-weight:900;color:var(--ink-h);line-height:1.55;margin-top:6px}
+.gs-t{font-size:14px;color:var(--ink);line-height:1.8}
+.gs-go{margin-top:12px;font-weight:800;color:var(--blue-d);display:flex;align-items:center;gap:6px}
+.gs-card.y2 .gs-go{color:var(--orange-d)}
+.gs-go .arw{transition:.2s}
+.gs-card:hover .gs-go .arw{transform:translateX(5px)}
+.gs-num{position:absolute;left:auto;right:-6px;bottom:-30px;font-weight:900;font-size:120px;line-height:1;color:var(--blue-tint);z-index:0}
+.gs-card.y2 .gs-num{color:var(--orange-tint)}
+.gs-card>*{position:relative;z-index:1}
+.gs-foot{text-align:center;font-size:13px;color:var(--ink-h);font-weight:700;margin-top:20px}
+
+/* faq accordion */
+.faq-list .faq-q{cursor:pointer;position:relative;padding-right:46px}
+.faq-list .faq-q::after{content:"";position:absolute;right:20px;top:24px;width:11px;height:11px;border-right:2.5px solid var(--blue);border-bottom:2.5px solid var(--blue);transform:rotate(45deg);transition:transform .25s}
+.faq-list .faq-item.open .faq-q::after{transform:rotate(-135deg)}
+.faq-list .faq-a{max-height:0;overflow:hidden;padding-top:0;padding-bottom:0;transition:max-height .3s ease,padding .3s ease}
+.faq-list .faq-item.open .faq-a{max-height:600px;padding-bottom:22px}
+
+.spbr{display:none}
+@media(max-width:600px){
+/* mobile polish v4 (abs char beside headline) */
+.sticky-cta{transform:translateY(115%);transition:transform .3s ease}
+.sticky-cta.show{transform:translateY(0)}
+.flow-card h5{font-size:15px}
+.flow-card p{font-size:13px}
+.faq-a{font-size:13.5px}
+.ba-b,.ba-a{font-size:13px}
+.r2card p{font-size:13.5px}
+.spbr{display:inline}
+.hero{padding:80px 0 30px}
+.hero-grid{display:block}
+.hero-art{position:absolute;top:80px;right:14px;width:112px;min-height:0;margin:0;z-index:2}
+.pcloud,.pcloud .lines{display:none}
+.char-svg{position:static;transform:none;width:100%;height:auto;max-width:112px;margin:0;display:block;filter:drop-shadow(0 6px 10px rgba(94,124,181,.18))}
+.hero-eyebrow{font-size:10.5px;padding:6px 12px;margin-bottom:12px;white-space:nowrap}
+.hero h1{font-size:28px;line-height:1.4;margin-bottom:10px;padding-right:116px}
+.hero h1 .spark{display:none}
+.dotline{max-width:55%}
+.hero .sub{font-size:13px;line-height:1.95}
+.hero .tagline{font-size:18px}
+.cta{font-size:16px;padding:15px 18px}
+.fv-carousel{margin-top:18px}
+.wrap{padding:0 18px}
+.sec-title{font-size:20px;line-height:1.5}
+.lead-center{font-size:13.5px}
+.gradesel{padding:46px 0 48px}
+.gs-title{font-size:20px}
+.gs-h{font-size:17px}
+.gs-num{font-size:88px;bottom:-18px}
+.def-note{font-size:13px}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGGHLZ38"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ======================= HEADER ======================= -->
+<header>
+  <div class="header-in">
+    <div class="logo lg-mark"><span class="g">AO</span><span class="bl">H</span><span class="g">A</span><span class="or">R</span><span class="g">U</span><span class="in">インターン</span></div>
+    <div class="hnav"><a class="hlink" href="https://aoharu-intern.com/jobs" target="_blank" rel="noopener">求人ナビはこちら</a><a class="hlink" href="https://intern.worcry.com/" target="_blank" rel="noopener">採用担当者はこちら</a><a class="btn-line" href="#cta" data-cta="header">LINEで相談</a></div>
+  </div>
+</header>
+
+<!-- ======================= HERO (First View) ======================= -->
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="hero-eyebrow">大学1・2年生特化<b>インターン</b>サービス</span>
+      <h1>キャリアは、<br>体験で磨かれる。<span class="spark">✦</span></h1>
+      <div class="dotline"></div>
+      <p class="sub">
+        就職も、大手も、中小も。<br>
+        営業も、企画も、エンジニアも。<br>
+        独立も、フリーランスも、海外も。<br>
+        いろんな選択肢を、あなたに。<br>
+        さあ、まだ知らない未来へ。
+      </p>
+      <p class="tagline"><u>選べるって、たのしい。</u></p>
+      <div class="hero-cta-wrap">
+        <a class="cta" href="#cta" data-cta="hero"><span class="lbadge">LINE</span>話を聞いてみる<small>無料・登録1分／面談は希望者だけ</small></a>
+      </div>
+      
+    </div>
+
+    <div class="hero-art">
+      
+      <svg class="char-svg" viewBox="0 0 220 244" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AOHARUインターンのキャラクター">
+        <ellipse cx="110" cy="236" rx="68" ry="9" fill="#233A63" opacity="0.10"/>
+        <path d="M96,188 L92,214" stroke="#233A63" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M96,188 L92,214" stroke="#FFFFFF" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <path d="M126,188 L130,214" stroke="#233A63" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M126,188 L130,214" stroke="#FFFFFF" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="88" cy="219" rx="15" ry="8.5" fill="#4C6699" stroke="#233A63" stroke-width="3.5"/>
+        <ellipse cx="134" cy="219" rx="15" ry="8.5" fill="#4C6699" stroke="#233A63" stroke-width="3.5"/>
+        <path d="M164,150 Q184,158 181,182" stroke="#233A63" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M164,150 Q184,158 181,182" stroke="#FFFFFF" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <path d="M58,150 Q34,140 37,110" stroke="#233A63" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M58,150 Q34,140 37,110" stroke="#FFFFFF" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <path d="M37,108 V92" stroke="#233A63" stroke-width="10" fill="none" stroke-linecap="round"/>
+        <path d="M37,108 V92" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M53,88 H167 L159,166 Q159,206 110,206 Q61,206 61,166 Z" fill="#6E90C9" stroke="#233A63" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M66,98 V162 Q66,196 110,196 Q154,196 154,162 V98" fill="none" stroke="#CFE0F5" stroke-width="2.4" stroke-dasharray="5 6" stroke-linecap="round"/>
+        <path d="M50,62 H170 Q175,62 175,67 V92 Q175,97 170,97 H50 Q45,97 45,92 V67 Q45,62 50,62 Z" fill="#7C9BD0" stroke="#233A63" stroke-width="4"/>
+        <path d="M54,69 H166" stroke="#CFE0F5" stroke-width="2.4" stroke-dasharray="5 6" stroke-linecap="round"/>
+        <circle cx="110" cy="80" r="9" fill="#F4C430" stroke="#C9971F" stroke-width="2.5"/>
+        <ellipse cx="96" cy="142" rx="9.5" ry="12" fill="#FFFFFF" stroke="#233A63" stroke-width="3"/>
+        <ellipse cx="128" cy="142" rx="9.5" ry="12" fill="#FFFFFF" stroke="#233A63" stroke-width="3"/>
+        <circle cx="98" cy="144" r="5" fill="#1B2B4A"/>
+        <circle cx="130" cy="144" r="5" fill="#1B2B4A"/>
+        <circle cx="96" cy="141" r="1.6" fill="#FFFFFF"/>
+        <circle cx="128" cy="141" r="1.6" fill="#FFFFFF"/>
+        <path d="M104,160 Q112,167 120,160" fill="none" stroke="#233A63" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div class="pcloud">
+        <svg class="lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <circle cx="44.5" cy="47.3" r="0.8"/><circle cx="40.1" cy="39.5" r="1.2"/><circle cx="35.7" cy="31.7" r="1.6"/><circle cx="32" cy="25" r="2.1"/>
+          <circle cx="50" cy="45" r="0.8"/><circle cx="50" cy="35.4" r="1.2"/><circle cx="50" cy="25.8" r="1.6"/><circle cx="50" cy="17.6" r="2.1"/>
+          <circle cx="55.5" cy="46.8" r="0.8"/><circle cx="59.9" cy="38.6" r="1.2"/><circle cx="64.3" cy="30.4" r="1.6"/><circle cx="68" cy="23.4" r="2.1"/>
+          <circle cx="40.5" cy="51.3" r="0.8"/><circle cx="32.9" cy="46.7" r="1.2"/><circle cx="25.3" cy="42.1" r="1.6"/><circle cx="18.8" cy="38.1" r="2.1"/>
+          <circle cx="59.5" cy="50.3" r="0.8"/><circle cx="67.1" cy="44.9" r="1.2"/><circle cx="74.7" cy="39.5" r="1.6"/><circle cx="81.2" cy="34.9" r="2.1"/>
+          <circle cx="60" cy="55.3" r="0.8"/><circle cx="68" cy="53.9" r="1.2"/><circle cx="76" cy="52.5" r="1.6"/><circle cx="82.8" cy="51.3" r="2.1"/>
+          <circle cx="41.5" cy="56.5" r="0.8"/><circle cx="34.7" cy="56.1" r="1.2"/><circle cx="27.9" cy="55.7" r="1.6"/><circle cx="22.1" cy="55.4" r="2.1"/>
+          <circle cx="59" cy="59.3" r="0.8"/><circle cx="66.2" cy="61.1" r="1.2"/><circle cx="73.4" cy="62.9" r="1.6"/><circle cx="79.5" cy="64.4" r="2.1"/>
+        </svg>
+        <span class="pchip">大手</span>
+        <span class="pchip">スタートアップ</span>
+        <span class="pchip">ベンチャー</span>
+        <span class="pchip">エンジニア</span>
+        <span class="pchip">営業</span>
+        <span class="pchip">企画・マーケ</span>
+        <span class="pchip">フリーランス</span>
+        <span class="pchip">海外で働く</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FV CAROUSEL (sample) ======================= -->
+<!-- CAROUSEL -->
+<div class="fv-carousel">
+  <div class="cap"><span class="cap-k">Student's Voice</span><b class="mark">体験のひきだし</b><span class="cap-sub">先輩のリアルな体験談。気になるカードをタップ →</span></div>
+  <div class="carousel" id="fvCarousel">
+    <div class="slide">
+      <img src="https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzYzLqr/s-480x372_c3e3b520-ecf5-4cac-b4bd-3ad3ab880b46.webp" alt="">
+      <div class="body"><span class="tag">マーケティング</span><h4>SNS運用で売上が動いた話</h4><p>慶應義塾大学 商学部・2年</p><p class="detail" hidden>正直、最初は「大学生にSNSなんて任せて大丈夫？」って自分でも思ってました。担当はコスメブランドのInstagram。最初の1ヶ月は投稿してもいいねが二桁いけばいい方で、毎日数字を見るのが怖かったです。でも社員さんに「なんで伸びないか、仮説を立ててみて」と言われて、保存数が多い投稿を分析してみたんです。そこから「使い方が分かる動画」に振り切ったら、リールが急に伸びて、商品ページへのクリックも増えました。先月はついに、私が企画した投稿経由で過去最高の売上が出たんです。数字って正直で、言い訳がきかない。でもその分、自分の打ち手で人が動く瞬間がちゃんと見える。気づけば、授業よりマーケの話をしている時間が一番楽しくなっていました。</p></div>
+    </div>
+    <div class="slide">
+      <img src="https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzYzLqr/s-480x312_c2f4a622-8b89-4276-b04b-f274bc263069.webp" alt="">
+      <div class="body"><span class="tag">営業</span><h4>初アポで学んだ「聞く力」</h4><p>日本大学 商学部・1年</p><p class="detail" hidden>1年生で営業って、ぶっちゃけ無謀かなと思ってました。最初のアポは緊張で頭が真っ白。用意したトークを早口で全部言って、見事に撃沈です。落ち込んでいたら先輩に「お前さっき、相手の話を一回も聞いてないぞ」と言われて、ハッとしました。次からは商品説明を半分に減らして、「今どんなことで困ってますか？」とひたすら質問する側に回ったんです。すると相手がどんどん話してくれて、課題に合わせて提案できた。後日、担当の方から「若いのにちゃんと聞いてくれた」と言ってもらえて、初めて受注が決まりました。同い年がまだ何も始めていない今のうちに動けてよかった、と本気で思っています。聞く力は、就活でも社会人になっても一生使えるはずです。</p></div>
+    </div>
+    <div class="slide">
+      <img src="https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzYzLqr/s-392x265_15d2a5a2-d8c1-4e4a-bb83-e5a270b7b6ea.webp" alt="">
+      <div class="body"><span class="tag">エンジニア</span><h4>ゼロから開発に挑戦</h4><p>早稲田大学 基幹理工学部・2年</p><p class="detail" hidden>プログラミングは授業で少しやった程度で、実務なんて絶対無理だと思っていました。最初の仕事は、誰も気づかないような小さなバグの修正。たった一行直すのに丸一日かかって、自分の出来なさに凹みました。それでも社員さんは嫌な顔ひとつせずレビューしてくれて、「最初はみんなこうだから」と。少しずつ慣れて、今では実際に使われているサービスの画面を、自分で機能ごと作らせてもらっています。先週、自分が実装したボタンをユーザーが何百回も押している数字を見たときは、本当に震えました。授業の課題と違って、画面の向こうに本物の人がいる。就活のとき「何もやってない」ままだったら…と思うと正直ゾッとします。動けば、未経験でも一年でここまで変われるんだと実感しています。</p></div>
+    </div>
+    <div class="slide">
+      <img src="https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzYzLqr/s-412x298_b4ebac75-339f-44d1-915e-69998c140261.webp" alt="">
+      <div class="body"><span class="tag">企画</span><h4>イベント企画を任された</h4><p>明治大学 文学部・2年</p><p class="detail" hidden>文学部だし、就職とか正直まだ他人事でした。任されたのは学生向けイベントの企画。「学生の気持ちが分かるのは君だから」と丸ごと任されて、嬉しい反面プレッシャーがすごかったです。最初の告知は集客が全然伸びず、開催2週間前で申込みは定員の三割。焦ってターゲットを学年で絞り直し、刺さりそうな言葉に変えてSNSを毎日投稿しました。当日はおかげで満席。参加者の「来てよかった」の一言で、それまでの不安が全部報われました。企画書の作り方も、人を動かす言葉の選び方も、ここで初めて知りました。やる前は「私なんかが」と思っていたけど、やってみたら意外とできた。あの一歩を踏み出していなかったら、今もずっと迷ったままだったと思います。</p></div>
+    </div>
+    <div class="slide">
+      <img src="https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzYzLqr/s-350x223_a4277e4b-6830-46ca-948a-4fce03f3942d.webp" alt="">
+      <div class="body"><span class="tag">海外</span><h4>英語を使う現場へ</h4><p>東京外国語大学 国際社会学部・1年</p><p class="detail" hidden>TOEICの点はそこそこでも、いざ海外の人と話すと言葉が出てこない。外大なのに、と落ち込みました。インターンでは海外チームとのやり取りを任され、最初の会議は一言も発言できないまま終わったんです。悔しくて、次からは言いたいことを事前にメモして、拙くても必ず一回は発言すると決めました。担当したのは海外ユーザー向けの問い合わせ対応と、SNS投稿の英訳。返信に「ありがとう、助かった」と返ってきた時、文法が完璧じゃなくても伝わるんだと分かりました。今では会議で自分から質問できます。1年生のうちにこの環境へ飛び込めて本当によかった。待っていても英語は話せるようにならない、と身をもって知りました。</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= REGRET ======================= -->
+<!-- GRADE SELECT -->
+<section class="gradesel"><div class="wrap"><div class="gs-head"><span class="gs-kicker">Strategy</span><h2 class="gs-title">あなたは、いま<span class="mark">何年生</span>？</h2><p class="gs-sub">学年がちがえば、最適な戦略もちがう。<br class="spbr">あなたの学年の動き方をチェック。</p></div><div class="gs-grid"><a class="gs-card y1" href="y1.html"><span class="gs-y">大学1年生のあなたへ</span><span class="gs-h">1年生で始める人は、<br>まだ少数派。</span><span class="gs-t">1年生のうちに始めた経験は、3年後そのまま武器になる。<br class="spbr">先行スタートを優位性に変えるロードマップ。</span><span class="gs-go">1年生の戦略を見る <span class="arw">→</span></span><span class="gs-num">1</span></a><a class="gs-card y2" href="y2.html"><span class="gs-y">大学2年生のあなたへ</span><span class="gs-h">サマーのESまで、<br>あと約1年。</span><span class="gs-t">ガクチカ完成 → サマー → 本選考。<br class="spbr">間に合ううちに始める、逆算ロードマップ。</span><span class="gs-go">2年生の戦略を見る <span class="arw">→</span></span><span class="gs-num">2</span></a></div><p class="gs-foot">紹介求人はすべて1・2年生歓迎・有給です。</p></div></section>
+
+
+<!-- WHAT IS -->
+<section class="whatis"><div class="wrap" style="max-width:760px"><p class="lead-center" style="color:var(--muted);font-size:14.5px;margin-bottom:20px">やりたいことは、まだ決まっていなくて大丈夫。<br>まずはどんなサービス？から、覗いてみてください。</p><div class="sec-head" style="margin-bottom:16px"><span class="tag-service">SERVICE</span><h2 class="sec-title">AOHARUインターンとは？</h2></div><p class="lead-center">大学1・2年生の<b style="color:var(--blue)">「キャリア」を応援する<br class="spbr">長期インターン紹介サービス</b>です。<br>「何がやりたいかわからない」「自分に向いている仕事って何だろう」「まずは何か挑戦してみたい」<br class="spbr">——そんな大学1・2年生の最初の一歩をサポートします。</p><div class="def-note"><b>長期インターンとは？</b>学生のうちから実際の企業で働きながら、営業やマーケティングなどの仕事に挑戦できる制度です。アルバイトとは少し違う、“社会人のお試し体験”みたいなもの。大学生活では出会えない人や経験に触れられるので、「意外と面白いかも」が見つかる学生もたくさんいます。</div></div></section>
+<style>.hk-sec{background:var(--paper);padding:56px 0}.hk-sec .wrap{max-width:1040px}.hk-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}.hk-table{min-width:680px;max-width:920px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-sm);overflow:hidden}.hk-row{display:grid;grid-template-columns:120px 1.12fr 1fr 1fr;align-items:stretch}.hk-row+.hk-row{border-top:1px solid var(--line)}.hk-axis,.hk-a,.hk-b,.hk-ours{padding:15px 16px;display:flex;flex-direction:column;justify-content:center;gap:3px;line-height:1.7}.hk-axis{background:#FAF9F5;font-weight:900;color:var(--ink-h);font-size:13.5px}.hk-a,.hk-b{color:var(--muted);font-size:13px}.hk-b{border-left:1px solid var(--line)}.hk-ours{background:var(--blue-tint);font-size:13.4px;color:var(--ink-h);font-weight:700;border-left:2px solid var(--blue)}.hk-ic{font-weight:900;margin-right:6px}.hk-a .hk-ic,.hk-b .hk-ic{color:#C2C7D2}.hk-ours .hk-ic{color:var(--blue-d)}.hk-head .hk-axis{background:var(--ink-h);color:#fff;font-size:11.5px;justify-content:center}.hk-head .hk-a,.hk-head .hk-b{background:#EFEEE9;color:var(--muted);font-weight:800;font-size:13.5px;text-align:center;align-items:center}.hk-head .hk-ours{background:linear-gradient(135deg,var(--blue),var(--blue-d));color:#fff;font-weight:900;font-size:15px;text-align:center;align-items:center}.hk-badge{display:inline-block;font-size:10px;font-weight:800;background:var(--yellow);color:var(--ink-h);border-radius:6px;padding:2px 8px;margin-top:5px}.hk-foot{max-width:920px;margin:16px auto 0;text-align:center;font-size:12.5px;color:var(--muted)}@media(max-width:680px){.hk-table{min-width:640px}}</style><!-- HIKAKU -->
+<section class="hk-sec"><div class="wrap"><div class="sec-head"><span class="sec-kicker">Why AOHARU</span><h2 class="sec-title">他社サービスとの<span class="mark">違い</span></h2><p class="lead-center">同じ「長期インターン探し」でも、大学1・2年生にとっての手厚さがまるで違います。</p></div><div class="hk-scroll"><div class="hk-table"><div class="hk-row hk-head"><div class="hk-axis">比べるポイント</div><div class="hk-ours">AOHARUインターン<span class="hk-badge">1・2年生特化</span></div><div class="hk-a">一般的な<br>求人サイト</div><div class="hk-b">大手就活・<br>インターンサイト</div></div><div class="hk-row"><div class="hk-axis">紹介する求人</div><div class="hk-ours"><span class="hk-ic">✓</span>1・2年生歓迎の求人だけを厳選</div><div class="hk-a"><span class="hk-ic">✕</span>「3年生以上」「経験者歓迎」が中心</div><div class="hk-b"><span class="hk-ic">△</span>3年生〜本選考向けが中心</div></div><div class="hk-row"><div class="hk-axis">サポート</div><div class="hk-ours"><span class="hk-ic">✓</span>専任アドバイザーがマッチングまで伴走</div><div class="hk-a"><span class="hk-ic">✕</span>掲載・紹介して終わり</div><div class="hk-b"><span class="hk-ic">△</span>求人は多いが個別サポートは限定的</div></div><div class="hk-row"><div class="hk-axis">キャリア相談</div><div class="hk-ours"><span class="hk-ic">✓</span>就活を見据え、複数の選択肢を比較提案</div><div class="hk-a"><span class="hk-ic">✕</span>基本は自分で探す</div><div class="hk-b"><span class="hk-ic">△</span>自己分析ツール中心</div></div><div class="hk-row"><div class="hk-axis">アフターフォロー</div><div class="hk-ours"><span class="hk-ic">✓</span>参画後も定期面談で継続サポート</div><div class="hk-a"><span class="hk-ic">✕</span>参画後は基本ノータッチ</div><div class="hk-b"><span class="hk-ic">△</span>参画後のフォローは限定的</div></div></div></div><p class="hk-foot">※ 一般的なサービスとの比較イメージです。</p></div></section>
+
+<!-- VOICE -->
+<section class="voices"><div class="wrap"><div class="sec-head"><span class="sec-kicker">Voice</span><h2 class="sec-title">一歩踏み出した学生たちは、<br class="spbr">どう変わった？</h2></div><div class="ba-grid"><div class="ba-card"><div class="ba-name">大学2年 Tさん（女性）</div><div class="ba-body"><div class="ba-b"><span class="lab">Before</span>周りの友達はサークルや趣味を楽しんでいるのに、私は何をしたいのかわからない。将来のことを考えようとしても、何から始めればいいのかわかりませんでした。</div><div class="ba-arrow">↓</div><div class="ba-a"><span class="lab">After</span>面談を通じて、自分が「人の心を動かすこと」に興味があると気付きました。まずはSNS運用や企画に携わり、今はマーケティングの仕事にも挑戦しています。以前よりも将来を前向きに考えられるようになりました。</div></div></div><div class="ba-card"><div class="ba-name">大学1年 Aさん（男性）</div><div class="ba-body"><div class="ba-b"><span class="lab">Before</span>マーケティングに興味はあったけど、募集を見ても「3年生以上」「経験者歓迎」ばかり。正直、自分には無理だと思っていました。</div><div class="ba-arrow">↓</div><div class="ba-a"><span class="lab">After</span>紹介してもらった企業では、未経験の自分でも挑戦できました。実際に仕事を経験する中で、「意外とできるかもしれない」と思えるように。毎日新しい発見があって、とても充実しています。</div></div></div><div class="ba-card"><div class="ba-name">大学2年 Kさん（女性）</div><div class="ba-body"><div class="ba-b"><span class="lab">Before</span>営業、マーケ、企画…。興味はあるけど種類が多すぎて、自分に何が合うのかわかりませんでした。</div><div class="ba-arrow">↓</div><div class="ba-a"><span class="lab">After</span>面談で一緒に整理してもらったことで、自分に合う環境を見つけられました。一人だったら、たぶん今も迷ったままだったと思います。</div></div></div></div></div></section>
+<!-- STRENGTHS -->
+<section class="reasons"><div class="wrap"><div class="sec-head"><span class="sec-kicker">Why</span><h2 class="sec-title">なぜ、未経験の大学1・2年生でも<br>挑戦できるのか？</h2><p class="lead-center">AOHARUインターンの特徴は、<br class="spbr"><b style="color:var(--blue)">「紹介して終わり」ではない</b>こと。<br>「何をしたいかわからない」<br class="spbr">「自分に向いている仕事がわからない」<br class="spbr">「インターンに興味はあるけど、自分にできるか不安」<br class="spbr">——一緒に一歩踏み出せる環境を整えています。</p></div><div class="r2grid"><div class="r2card"><h4>① あなたに合った企業をご紹介</h4><p>専任アドバイザーが、あなたの興味や挑戦してみたいことを丁寧にヒアリング。一人一人の個性や目標に合わせて、あなたに合った企業をご紹介します。「どんな仕事が向いているのかわからない」「挑戦したいけど、どこに応募すればいいかわからない」——そんな気持ちも、一緒に整理しながら進めていきます。</p></div><div class="r2card"><h4>② 入社後も定期的な面談でサポート</h4><p>企業を紹介して終わりではありません。実際に働き始めてからも定期的な面談を実施し、困ったことや不安なことを相談できる環境を用意しています。「思っていたより難しい」「うまくできなくて不安」——そんな時も、一人で抱え込む必要はありません。</p></div></div><p class="lead-center" style="margin-top:22px;font-weight:800;color:var(--ink-h)">だからこそ、「やりたいことがわからない」「自分に自信がない」という大学1・2年生でも、安心して最初の一歩を踏み出せるのです。</p></div></section>
+<!-- CTA BAND -->
+<section class="cta-band"><div class="wrap"><p class="ribbon">＼まずは話を聞いてみる／</p><div style="margin-top:10px"><a class="cta" href="#cta" data-cta="mid"><span class="lbadge">LINE</span>話を聞いてみる<small>無料・登録1分／面談は希望者だけ</small></a></div><p class="cta-note">※登録後はアンケートに答えるだけ。<br class="spbr">面談は希望者のみ。</p></div></section>
+<!-- FAQ -->
+<section class="faq"><div class="wrap"><div class="sec-head"><span class="sec-kicker">FAQ</span><h2 class="sec-title">挑戦したいけど、不安もあるよね</h2></div><div class="faq-list"><div class="faq-item"><div class="faq-q"><span class="qmark">Q</span>やりたいことが決まっていなくても大丈夫ですか？</div><div class="faq-a"><span class="amark">A</span>もちろん大丈夫です。実際に利用している学生の多くも、「何がやりたいかわからない」という状態からスタートしています。面談を通じて、一緒に興味や可能性を整理していくので、やりたいことを決めておく必要はありません。</div></div><div class="faq-item"><div class="faq-q"><span class="qmark">Q</span>大学1年生でも参加できますか？</div><div class="faq-a"><span class="amark">A</span>参加できます。AOHARUインターンは大学1・2年生向けのサービスです。未経験歓迎の企業を中心にご紹介しているため、知識や経験がなくても安心して挑戦できます。</div></div><div class="faq-item"><div class="faq-q"><span class="qmark">Q</span>実際にどんな企業・職種で経験を積めるの？</div><div class="faq-a"><span class="amark">A</span>マーケティング・営業・企画・エンジニアなど、さまざまな職種の企業と提携しています。大手・中小・スタートアップとさまざまな規模の企業があるので、自分の興味や目標に合わせて選べます。「どれが自分に合うかわからない」という場合も、面談で一緒に整理しながら決めていけます。</div></div><div class="faq-item"><div class="faq-q"><span class="qmark">Q</span>まずは話だけ聞いてみることもできますか？</div><div class="faq-a"><span class="amark">A</span>もちろんです。「興味はあるけど、自分に合うかわからない」「まだやると決めていない」そんな状態でも大歓迎です。まずは気軽に相談してみてください。</div></div><div class="faq-item"><div class="faq-q"><span class="qmark">Q</span>インターン中は給料をもらえるの？</div><div class="faq-a"><span class="amark">A</span>はい、AOHARUインターンでご紹介している企業はすべて有給です。社会人経験を積めるのが長期インターンの魅力です。</div></div></div></div></section>
+<!-- FLOW -->
+<section><div class="wrap"><div class="sec-head"><span class="sec-kicker">Flow</span><h2 class="sec-title">長期インターン開始までの流れ</h2></div><div class="flow"><div class="flow-step"><div class="flow-num">1</div><div class="flow-card"><h5>LINE登録・アンケート回答</h5><p>まずは公式LINEに登録。気になることがあれば、気軽に相談できます。</p></div></div><div class="flow-step"><div class="flow-num">2</div><div class="flow-card"><h5>個別面談（電話15分／Zoom30分）</h5><p>「どんな仕事があるの？」「自分に向いている仕事って何だろう？」そんな疑問や不安についてお話します。まだインターンをやると決めていなくても大丈夫です。</p></div></div><div class="flow-step"><div class="flow-num">3</div><div class="flow-card"><h5>企業面接・準備サポート</h5><p>興味や希望に合った企業をご紹介します。応募したい企業が見つかったら、面接へ。面接準備もサポートしています。</p></div></div><div class="flow-step"><div class="flow-num">4</div><div class="flow-card"><h5>長期インターン開始＆定期フォロー</h5><p>企業とのマッチングが決まったら、インターンスタート。開始後も定期的に相談できる環境を用意しています。</p></div></div></div></div></section>
+<!-- CLOSING -->
+<section class="closing" id="cta"><div class="wrap"><svg class="mascot" viewBox="0 0 220 244" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="110" cy="236" rx="68" ry="9" fill="#233A63" opacity="0.1"/><path d="M96,188 L92,214" stroke="#233A63" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M96,188 L92,214" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M126,188 L130,214" stroke="#233A63" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M126,188 L130,214" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round"/><ellipse cx="88" cy="219" rx="15" ry="8.5" fill="#4C6699" stroke="#233A63" stroke-width="3.5"/><ellipse cx="134" cy="219" rx="15" ry="8.5" fill="#4C6699" stroke="#233A63" stroke-width="3.5"/><path d="M58,150 Q40,118 50,94" stroke="#233A63" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M58,150 Q40,118 50,94" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M164,150 Q186,120 174,96" stroke="#233A63" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M164,150 Q186,120 174,96" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M53,88 H167 L159,166 Q159,206 110,206 Q61,206 61,166 Z" fill="#6E90C9" stroke="#233A63" stroke-width="4" stroke-linejoin="round"/><path d="M66,98 V162 Q66,196 110,196 Q154,196 154,162 V98" fill="none" stroke="#CFE0F5" stroke-width="2.4" stroke-dasharray="5 6" stroke-linecap="round"/><path d="M50,62 H170 Q175,62 175,67 V92 Q175,97 170,97 H50 Q45,97 45,92 V67 Q45,62 50,62 Z" fill="#7C9BD0" stroke="#233A63" stroke-width="4"/><path d="M54,69 H166" stroke="#CFE0F5" stroke-width="2.4" stroke-dasharray="5 6" stroke-linecap="round"/><circle cx="110" cy="80" r="9" fill="#F4C430" stroke="#C9971F" stroke-width="2.5"/><ellipse cx="96" cy="142" rx="9.5" ry="12" fill="#fff" stroke="#233A63" stroke-width="3"/><ellipse cx="128" cy="142" rx="9.5" ry="12" fill="#fff" stroke="#233A63" stroke-width="3"/><circle cx="98" cy="144" r="5" fill="#1B2B4A"/><circle cx="130" cy="144" r="5" fill="#1B2B4A"/><circle cx="96" cy="141" r="1.6" fill="#fff"/><circle cx="128" cy="141" r="1.6" fill="#fff"/><path d="M101,157 Q112,171 121,157" fill="none" stroke="#233A63" stroke-width="3.4" stroke-linecap="round"/></svg><h2 class="sec-title">まずは、一歩踏み出してみませんか？</h2><p class="lead-center" style="margin-top:14px">最初からやりたいことが決まっている必要はありません。<br>「何かやってみたい」——その気持ちがあれば十分です。</p><p class="lead-center" style="margin-top:12px">実際に体験することで、「意外と自分にもできるかも」と気づき、いつの間にか選択肢が広がっている。<br>そんな学生が、AOHARUインターンから生まれています。</p><p class="punch">さあ、まだ知らない未来へ。<br><b>選べるって、たのしい。</b></p><p class="ribbon">＼まずは話を聞いてみる／</p><div style="margin-top:8px"><a class="cta" href="#" data-cta="closing"><span class="lbadge">LINE</span>話を聞いてみる<small>無料・登録1分／面談は希望者だけ</small></a></div><p class="cta-note">※登録後はアンケートに答えるだけ。<br class="spbr">面談は希望者のみ。</p></div></section>
+
+<footer>
+  <div class="logo lg-mark"><span class="g">AO</span><span class="bl">H</span><span class="g">A</span><span class="or">R</span><span class="g">U</span><span class="in">インターン</span></div>
+  <div>© 2026 WorCry Inc. All Rights Reserved.</div>
+</footer>
+
+<div class="sticky-cta"><a href="#cta" data-cta="sticky"><span class="lbadge">LINE</span>話を聞いてみる（無料）</a></div>
+
+<script>
+// FV carousel: gentle auto-advance with loop
+(function(){
+  var el=document.getElementById('fvCarousel');
+  if(!el) return;
+  var dir=1;
+  setInterval(function(){
+    if(el.matches(':hover')) return;
+    var step=el.querySelector('.slide').offsetWidth+18;
+    if(el.scrollLeft+el.clientWidth>=el.scrollWidth-4) dir=-1;
+    if(el.scrollLeft<=0) dir=1;
+    el.scrollBy({left:step*dir,behavior:'smooth'});
+  },3000);
+})();
+</script>
+
+<!-- LIGHTBOX -->
+<div class="lb-backdrop" id="lbBackdrop"><div class="lb-card"><button class="lb-close" id="lbClose" aria-label="閉じる">&times;</button><img id="lbImg" src="" alt=""><div class="lb-body"><span class="lb-tag" id="lbTag"></span><h3 id="lbTitle"></h3><p class="lb-meta" id="lbMeta"></p><p class="lb-detail" id="lbDetail"></p></div></div></div>
+<script>(function(){var bd=document.getElementById("lbBackdrop");if(!bd)return;function op(s){var img=s.querySelector("img"),tag=s.querySelector(".tag"),hh=s.querySelector("h4"),ps=s.querySelectorAll("p"),det=s.querySelector(".detail");document.getElementById("lbImg").src=img?img.src:"";document.getElementById("lbTag").textContent=tag?tag.textContent:"";document.getElementById("lbTitle").textContent=hh?hh.textContent:"";document.getElementById("lbMeta").textContent=ps[0]?ps[0].textContent:"";document.getElementById("lbDetail").textContent=det?det.textContent:"";bd.classList.add("open");document.body.style.overflow="hidden";}function cl(){bd.classList.remove("open");document.body.style.overflow="";}document.querySelectorAll("#fvCarousel .slide").forEach(function(s){s.addEventListener("click",function(){op(s);});});document.getElementById("lbClose").addEventListener("click",cl);bd.addEventListener("click",function(e){if(e.target===bd)cl();});document.addEventListener("keydown",function(e){if(e.key==="Escape")cl();});})();</script>
+<script>(function(){document.querySelectorAll(".faq-list .faq-q").forEach(function(q){q.addEventListener("click",function(){q.parentElement.classList.toggle("open");});});})();</script>
+<script>/*__hdrReveal*/(function(){var hd=document.querySelector(".sticky-cta"),hero=document.querySelector(".hero"),closing=document.querySelector(".closing");if(!hd||!hero)return;var closingVisible=false;if(closing&&"IntersectionObserver"in window){new IntersectionObserver(function(entries){closingVisible=entries[0].isIntersecting;upd();},{threshold:0.05}).observe(closing);}function upd(){if(closingVisible){hd.classList.remove("show");return;}if(window.scrollY>60)hd.classList.add("show");else hd.classList.remove("show");}upd();addEventListener("scroll",upd,{passive:true});addEventListener("resize",upd);})();</script>
+<script>
+document.addEventListener('click', function(e){
+  var el = e.target.closest('[data-cta]');
+  if(!el) return;
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({ event:'cta_click', cta_position: el.getAttribute('data-cta') });
+});
+</script>
+</body>
+</html>
