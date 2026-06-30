@@ -480,5 +480,16 @@ function upd(){var nb=(window.innerHeight+window.scrollY)>=(document.body.offset
 if(window.scrollY>60&&!nb)hd.classList.add("show");else hd.classList.remove("show");}
 upd();addEventListener("scroll",upd,{passive:true});addEventListener("resize",upd,{passive:true});})();
 </script>
+<script>
+(function(){
+  const utmContent = new URLSearchParams(location.search).get("utm_content");
+  if (!utmContent) return;
+  document.querySelectorAll("[data-cta]").forEach(function(el){
+    const href = el.getAttribute("href");
+    const separator = href.includes("?") ? "&" : "?";
+    el.setAttribute("href", href + separator + "cid1=" + encodeURIComponent(utmContent));
+  });
+})();
+</script>
 </body>
 </html>

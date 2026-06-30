@@ -634,5 +634,16 @@ document.addEventListener('click', function(e){
   dataLayer.push({ event:'cta_click', cta_position: el.getAttribute('data-cta') });
 });
 </script>
+<script>
+(function(){
+  const utmContent = new URLSearchParams(location.search).get("utm_content");
+  if (!utmContent) return;
+  document.querySelectorAll("[data-cta]").forEach(function(el){
+    const href = el.getAttribute("href");
+    const separator = href.includes("?") ? "&" : "?";
+    el.setAttribute("href", href + separator + "cid1=" + encodeURIComponent(utmContent));
+  });
+})();
+</script>
 </body>
 </html>
