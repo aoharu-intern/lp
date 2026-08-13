@@ -644,12 +644,18 @@ document.addEventListener('click', function(e){
 </script>
 <script>
 (function(){
-  const utmContent = new URLSearchParams(location.search).get("utm_content");
-  if (!utmContent) return;
+  const params = new URLSearchParams(location.search);
+  const utmContent = params.get("utm_content");
+  const utmTerm = params.get("utm_term");
+  if (!utmContent && !utmTerm) return;
   document.querySelectorAll("[data-cta]").forEach(function(el){
+    const qs = [];
+    if (utmContent) qs.push("cid1=" + encodeURIComponent(utmContent));
+    if (utmTerm) qs.push("cid2=" + encodeURIComponent(utmTerm));
+    if (!qs.length) return;
     const href = el.getAttribute("href");
     const separator = href.includes("?") ? "&" : "?";
-    el.setAttribute("href", href + separator + "cid1=" + encodeURIComponent(utmContent));
+    el.setAttribute("href", href + separator + qs.join("&"));
   });
 })();
 </script>
