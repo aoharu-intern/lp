@@ -726,7 +726,7 @@ upd();addEventListener("scroll",upd,{passive:true});addEventListener("resize",up
 
 <script>
 document.addEventListener('click',function(e){var el=e.target.closest('[data-cta]');if(!el)return;window.dataLayer=window.dataLayer||[];dataLayer.push({event:'cta_click',cta_position:el.getAttribute('data-cta')});});
-(function(){var u=new URLSearchParams(location.search).get('utm_content');if(!u)return;document.querySelectorAll('[data-cta]').forEach(function(el){var href=el.getAttribute('href');var sep=href.indexOf('?')>-1?'&':'?';el.setAttribute('href',href+sep+'cid1='+encodeURIComponent(u));});})();
+(function(){var p=new URLSearchParams(location.search);var u1=p.get('utm_content');var u2=p.get('utm_term');var qs=[];if(u1)qs.push('cid1='+encodeURIComponent(u1));if(u2)qs.push('cid2='+encodeURIComponent(u2));if(!qs.length)return;document.querySelectorAll('[data-cta]').forEach(function(el){var href=el.getAttribute('href');var sep=href.indexOf('?')>-1?'&':'?';el.setAttribute('href',href+sep+qs.join('&'));});})();
 </script>
 </body>
 </html>
