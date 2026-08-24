@@ -200,6 +200,9 @@ header{
 .slide .tag{display:inline-block;font-size:12px;font-weight:700;color:var(--blue-d);background:var(--blue-tint);padding:3px 11px;border-radius:7px;margin-bottom:9px}
 .slide h4{font-size:16px;font-weight:900;color:var(--ink-h);margin-bottom:5px;line-height:1.5}
 .slide p{font-size:13px;color:var(--muted)}
+@media(min-width:940px){
+  .slide[aria-hidden="true"]{display:none}
+}
 .gradesel{background:var(--cream-2);padding:58px 0}
 .gs-lead{text-align:center;font-weight:800;color:var(--ink-h);font-size:18px;margin-bottom:22px}
 .gs-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:820px;margin:0 auto}
