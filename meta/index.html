@@ -644,17 +644,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="sticky-cta"><a href="https://s.lmes.jp/landing-qr/2008019424-482x88yd?uLand=9OU4Wr" data-cta="header"><span class="lbadge">LINE</span>話を聞いてみる（無料）</a></div>
 
 <script>
-// FV carousel: gentle auto-advance with loop
+// FV carousel: one-direction auto-advance with loop
 (function(){
   var el=document.getElementById('fvCarousel');
   if(!el) return;
-  var dir=1;
   setInterval(function(){
     if(el.matches(':hover')) return;
     var step=el.querySelector('.slide').offsetWidth+18;
-    if(el.scrollLeft+el.clientWidth>=el.scrollWidth-4) dir=-1;
-    if(el.scrollLeft<=0) dir=1;
-    el.scrollBy({left:step*dir,behavior:'smooth'});
+    if(el.scrollLeft+el.clientWidth>=el.scrollWidth-4){
+      el.scrollTo({left:0,behavior:'instant'});
+    } else {
+      el.scrollBy({left:step,behavior:'smooth'});
+    }
   },3000);
 })();
 </script>
